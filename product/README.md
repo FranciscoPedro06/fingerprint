@@ -9,11 +9,15 @@ Everything else in this repository is research infrastructure:
 apparatus that keeps the grammar honest. None of that is the product. It is the engine
 behind the curtain.
 
-The product is a single conversational **Skill**: a reflection partner for people who
-design and build interfaces, often with the help of AI. It observes, it asks, it reveals
-recurring pattern. It does not generate interfaces, hand out templates, prescribe styles,
-or decide anything for the person using it. Its job is to make automatic decisions visible
-so that the person's authorship gets stronger.
+The product is a single **Skill**: a design-intelligence layer that runs on top of Claude and
+changes *how* Claude thinks whenever the work touches an interface. The person keeps using
+Claude normally — but when they say "create a landing page," "analyze my frontend," or
+"refactor this dashboard," the reasoning underneath understands intent first, observes before
+acting, builds with deliberate and legible choices instead of generic defaults, and takes an
+honest second look at the result. It builds, refactors, and reviews — but it never imposes its
+own taste, never decides for the person, and always hands authorship back. Its job is to defeat
+the "AI look" (the absence of deviation) in both directions: making real choices when building,
+and making automatic choices visible when reviewing.
 
 ## Structure
 
@@ -24,18 +28,23 @@ so that the person's authorship gets stronger.
 
 ## The line that must never blur
 
-The research pillars follow the **Law of Observation** (describe and ask, never prescribe)
-and the **Law of Judge Independence** (the system that makes a thing never validates it).
-Those are not just research rules — they *are* the product's personality. Fingerprint the
-Skill inherits them directly:
+The **Law of Judge Independence** is a research-integrity law: the system that *generates* the
+Atlas never *validates* it. That law governs the research apparatus — it is not a ban on the
+product building things. The product's own version of it is the **Honest Second Look**: after
+Claude builds, it turns the same critical eye on its own output and says plainly where it still
+landed on the centroid. Maker and honest critic live in the same turn.
 
-- It reflects in the **interrogative voice**. It surfaces what is present and asks what was
-  intended. It never says *do this*.
-- It is a **judge that never generated**. It does not produce the interface it discusses,
-  and it never issues a verdict ("this looks AI-made"). It offers grounded observations the
-  person judges for themselves.
+What the product inherits, unconditionally:
 
-If a proposed product behavior would break either law, the behavior is wrong, not the law.
+- **Observation before action** (Law of Observation). It looks at what is concretely present —
+  a reference, a codebase, its own draft — before interpreting or building, and when it
+  reflects, it describes and asks rather than lecturing.
+- **Handed-back authorship.** It makes real choices when building, but keeps them *legible* —
+  named, with an alternative shown — and never imposes its taste as the correct answer or
+  decides for the person. No verdicts ("this looks AI-made"); the person judges.
+- **Grounding.** No claim it can't point at. When unsure, it says so.
+
+If a proposed product behavior would break one of these, the behavior is wrong, not the law.
 
 ## Two velocities
 
@@ -48,6 +57,7 @@ never as raw Atlas entries or experiment numbers.
 
 ## Status
 
-v0.1 — foundation. The Skill's core behavior, voice, reflection flows, and boundaries are
-defined and runnable. See [`docs/roadmap.md`](docs/roadmap.md) for what is built and what
-comes next.
+v0.2 — the execution layer. The Skill now guides Claude *through* building, refactoring, and
+improving interfaces (not only reviewing them), using the intent → observe → reflect → execute
+→ honest-second-look → hand-back loop. See [`docs/roadmap.md`](docs/roadmap.md) for what is
+built and what comes next.

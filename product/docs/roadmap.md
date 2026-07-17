@@ -5,7 +5,30 @@ stable state. Each milestone names the research version it depends on.
 
 ---
 
-## v0.1 — Foundation ✅ (current)
+## v0.2 — Execution layer ✅ (current)
+
+The pivot (2026-07-17): Fingerprint stops being a reflection-only mirror and becomes the layer
+that guides Claude *through* building, refactoring, and improving interfaces — not only
+reviewing them. Claude stays the executor; Fingerprint changes how it thinks.
+
+- [x] Rewrote `SKILL.md` to the execution-layer constitution: four laws (Observation, Honest
+      Second Look, Grounding, Handed-Back Authorship) + the six-step loop (intent → observe →
+      reflect → execute → honest-second-look → hand-back) covering build / analyze / refactor.
+- [x] `description` frontmatter widened to auto-trigger on build requests ("create a landing
+      page," "build a UI," "refactor this dashboard") as well as reviews.
+- [x] New `references/deviation.md` — the craft of building off the genre centroid: the three
+      tests (deliberate / coherent / legible), the centroid map, where to spend deviation.
+- [x] Rewrote `capabilities-and-limits.md` and `first-contact.md` for the build path.
+- [x] Reconciled `product/README.md`, `docs/product-architecture.md`, `docs/roadmap.md`,
+      version → 0.2.0. Law of Judge Independence clarified as research-integrity, not a product ban.
+- [ ] NEXT: reconcile the softer references (`voice.md`, `reflection-flows.md`,
+      `observation-bridge.md`, `inputs.md`, `examples/session-transcripts.md`) to the build path.
+- [ ] NEXT: installable packaging (one-command install; verify plugin manifest schema).
+- [ ] NEXT: a runnable demo proving "create a front" feels different from a normal prompt.
+
+Depends on: `observation-language/v1`, `interface.v1` profile, `methodology` laws.
+
+## v0.1 — Foundation ✅ (done)
 
 The Skill exists, runs, and holds its shape. This is the spine everything else hangs from.
 
@@ -66,10 +89,19 @@ Make the partner feel like it *knows the person* across sessions — safely.
 
 These will not be built, ever, without overturning a project law:
 
-- An interface **generator** or "apply the fix" button.
+- **Taste imposed as truth** — building is in scope, but never presenting Fingerprint's choices
+  as the objectively correct design, and never overwriting a choice the person claimed as
+  theirs. Choices stay legible and reversible.
+- **Silent shipping of the centroid** — delivering the generic default without the honest
+  second look that says where it came out average.
 - A **score, rating, or AI-detector** verdict.
-- A **template / style-kit** library.
+- A reusable **template / style-kit / house-style** library applied blindly across projects.
 - A **silent** profile of the user built without their awareness.
 
-If a future request points here, it's a research or scope question for Pedro — not a product
-task to quietly pick up.
+> Note: an interface **generator** used to sit on this list. As of v0.2 (2026-07-17, Pedro's
+> explicit direction), building *is* the product — wrapped in intent → observe → reflect →
+> execute → honest-second-look → hand-back. What stays forbidden is imposing taste and shipping
+> the average silently, not the act of building itself.
+
+If a future request points at the remaining items, it's a scope question for Pedro — not a
+product task to quietly pick up.

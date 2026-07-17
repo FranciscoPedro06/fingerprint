@@ -1,25 +1,34 @@
 # Fingerprint — Product Architecture
 
-**Status:** v0.1 (foundation)
+**Status:** v0.2 (execution layer)
 **Audience:** whoever builds and evolves the product. Not the end user.
 
 ---
 
 ## 1. What the product is
 
-Fingerprint is a **conversational Skill**: a reflection partner for people who design and
-build interfaces, increasingly with AI in the loop. People can feel, almost instantly, when
-an interface "looks like AI" or looks generic — but they usually cannot say why. Fingerprint
-helps them say why, about their own work, in their own words.
+Fingerprint is a **design-intelligence layer**, shipped as a Skill, that runs on top of Claude
+and changes *how* Claude thinks whenever the work touches an interface — creating, analyzing,
+refactoring, or improving one. The person keeps using Claude normally; nothing announces
+itself. But the reasoning underneath changes shape, and the person feels it in the first
+thirty seconds.
 
-It is a mirror, not a factory. It does not make interfaces. It helps a person *see* the
-one they made — especially the parts they did not consciously choose.
+People can feel, almost instantly, when an interface "looks like AI" or looks generic — but
+they usually cannot say why. The research found the why: the "AI look" is the **absence of
+deviation** — the interface sits on its genre's convention centroid, so no one ever made a
+choice. Fingerprint exists to defeat that in two directions: it **builds with deliberate,
+owned choices** so output carries a fingerprint, and it **makes automatic choices visible**
+when reviewing so the person's authorship gets stronger.
+
+It is neither a mirror that refuses to touch anything nor a factory stamping a house style. It
+is the difference between *defaulting* and *deciding*.
 
 ### One-sentence definition
 
-> Fingerprint is a design director in conversation: it observes what is actually present in
-> an interface, asks what the person intended, and reveals the automatic decisions hiding
-> underneath — never prescribing, never generating, never deciding.
+> Fingerprint is the way Claude thinks about interfaces: it understands intent, observes
+> before acting, builds (or reflects) with deliberate and legible choices instead of generic
+> defaults, and takes an honest second look at the result — never imposing its taste, never
+> deciding for the person, always handing authorship back.
 
 ## 2. What it is not
 
@@ -27,12 +36,12 @@ These are hard boundaries, not defaults. Each traces to a project law.
 
 | It does not… | Because of… |
 |---|---|
-| generate interfaces, components, or code | Law of Judge Independence — a judge never produces what it judges |
-| hand out templates, palettes, or style kits | Law of Method — the product carries methods, never perishable content |
-| prescribe fixes or say "you should…" | Law of Observation — describe and ask, never instruct |
-| score, rate, or classify as "AI-made" vs "human-made" | Law of Judge Independence — no verdicts; the person judges |
+| impose its own taste as the correct design | Law of Handed-Back Authorship — choices stay legible and reversible, never imposed |
+| decide for the person, or overwrite a claimed intention | the product *strengthens* authorship, never replaces it |
+| ship the genre centroid silently and call it done | Law of the Honest Second Look — it says where its own build came out generic |
+| hand out reusable templates or a house style kit | Law of Method — the product carries methods, never perishable content; every build is chosen for *this* intent |
+| score, rate, or classify as "AI-made" vs "human-made" | no verdicts; the person judges |
 | assert traits without pointing at evidence | Law of Grounding — no conclusion without cited support |
-| decide for the person | the product exists to *strengthen* authorship, not replace it |
 | expose research machinery (Atlas IDs, EXP numbers, pipeline terms) unprompted | the research is invisible; the curtain stays down |
 
 ## 3. The system behind the curtain
@@ -72,14 +81,18 @@ This mirrors the project's own law — *core small, depth at the edges*.
 
 ```
 product/fingerprint/
-  SKILL.md                          # always-loaded core: identity, when to engage, the loop, boundaries
+  SKILL.md                          # always-loaded core: identity, the four laws, the loop, boundaries
   references/
+    first-contact.md                # the first-run "why this is different" moment, on build and review
+    inputs.md                       # receiving each input type (screenshot, URL, code, Figma, codebase) safely
+    deviation.md                    # the build craft: making choices off the genre centroid
     voice.md                        # personality & the interrogative voice, with examples
     reflection-flows.md             # the conversation flows and how sessions move
     observation-bridge.md           # invisible use of the research apparatus
-    capabilities-and-limits.md      # exactly what it can and cannot do, and how it declines
+    capabilities-and-limits.md      # exactly what it does and doesn't, and how it declines
   examples/
-    session-transcripts.md          # worked reflection sessions, good and bad
+    session-transcripts.md          # worked sessions across build, review, and refactor — good and bad
+  VERSION
 ```
 
 `SKILL.md` stays lean so it loads cheaply and reads clearly. Everything that would bloat it
@@ -87,20 +100,27 @@ lives in `references/` and is pulled in only for the situation that needs it.
 
 ## 5. The core interaction loop
 
-Every reflection follows the same shape, whether the user pastes a URL, drops a screenshot,
-shares code, or just describes what they are making:
+Every design task — building or looking — runs the same shape, whether the user pastes a URL,
+drops a screenshot, shares code, or asks for something to be created:
 
-1. **Receive** — take in the interface or the description. Establish what is actually in
-   front of us.
-2. **Observe (silent)** — run the pipeline internally. Collect grounded evidence via the
-   `interface.v1` dimensions. Never skip to interpretation.
-3. **Reflect (interrogative)** — surface one or two grounded observations and turn them
-   into questions about intent. *"Your palette resolves to one indigo and six neutrals —
-   was that a decision, or where the tool landed?"*
-4. **Hand back agency** — help the person separate what they chose from what defaulted, and
-   let *them* decide what to do about it. The Skill never closes the loop for them.
+1. **Understand intent** — get what this is actually *for*, and where it should refuse to be
+   generic. One or two sharp questions, not a requirements interrogation. If enough was given,
+   proceed.
+2. **Observe (silent)** — run the pipeline internally: the surrounding codebase and the genre
+   centroid (for a build), or the artifact's `interface.v1` dimensions (for a review). Never
+   skip to interpretation.
+3. **Reflect — decide where to deviate** — pick the deliberate, coherent choices that give the
+   thing a fingerprint (build), or the one or two observations that reveal where a choice was
+   never made (review).
+4. **Execute** — when the task is to build, Claude produces the real, working artifact with
+   the choices from step 3. (If the task was only to look, skip.)
+5. **Honest second look** — turn the same critical eye on the just-built output; say plainly
+   where it still landed on the centroid.
+6. **Hand authorship back** — name the choices made and a fork not taken; let *them* decide.
+   The Skill never closes the loop as though its version is final.
 
-The loop is small on purpose. Depth comes from repeating it well, not from a longer script.
+The loop is small on purpose. Depth comes from running it well, not from a longer script. Full
+build craft: [`../fingerprint/references/deviation.md`](../fingerprint/references/deviation.md).
 
 ## 6. State and memory
 
