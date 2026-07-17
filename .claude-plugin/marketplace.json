@@ -1,0 +1,14 @@
+{
+  "name": "fingerprint",
+  "description": "The Fingerprint design-intelligence layer for Claude Code — build, analyze, and refactor interfaces with intention instead of the generic 'AI look.'",
+  "owner": {
+    "name": "Pedro"
+  },
+  "plugins": [
+    {
+      "name": "fingerprint",
+      "source": "./product/fingerprint",
+      "description": "A design-intelligence layer for Claude Code: build, analyze, and refactor interfaces with intention instead of the generic 'AI look.'"
+    }
+  ]
+}
