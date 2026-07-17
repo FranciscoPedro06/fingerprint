@@ -1,0 +1,9 @@
+# Local Claude Code settings and workspace
+.claude/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
