@@ -9,6 +9,13 @@ the **target**, replacing the abstract "avoid the centroid."
 > Epistemic status: single observer, n=23, `🟡` hypotheses not conclusions (EXP-0001). Cite it
 > as strong evidence and direction, not law. But the direction is consistent and sharp.
 
+> **Read this as tells to avoid, not a vow of austerity.** "Gradient/glow/glass ≤1/23", "sharp
+> corners dominant", "neutral chrome" describe the *reflexes* excellent work skips — they do **not**
+> mean beautiful = bare. The same corpus is often warm, elegant, richly typeset, even ornamented
+> (Aesop's cream editorial, The Pudding's 12-hue tiles). Excellent interfaces reach beauty through
+> type, color, composition, photography, and craft — not through the AI effect-stack. The target is
+> **beautiful _and_ un-AI**; escaping into cold/austere/ugly is its own failure.
+
 ---
 
 ## The finding that matters most: signature is STRUCTURAL, not a skin

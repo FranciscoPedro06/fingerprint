@@ -27,8 +27,21 @@ mandate, 2026-07-17):
       *composition*, not the copy; a page that *mentions* a ledger but keeps the hero skeleton has
       a theme, not a structure (the Corvo lesson).
 - [x] Stress-test (the "A") folded into the Kit evidence + the genre table; VERSION → 0.3.0.
-- [ ] NEXT: the independent judge remains the real ceiling — an eval / cold second-pass reviewer,
-      because the maker grades on a curve (the Kit's own honest-limit note).
+- [x] **v0.3.1 — beauty is non-negotiable + first independent-judge findings.** A DIY blind
+      cold-subagent judge (the interim independent judge, since `claude plugin eval` is gated) ran
+      a with/without agency-landing A/B: it picked the disciplined arm on both axes and, with no
+      theory, independently named the Kit atoms as the plain arm's genericness — corroborating the
+      diagnosis. But it also flagged that the disciplined arm drifted into an emerging
+      **dark-terminal/dev-brutalist centroid** and was **ugly** (cramped kerning, all-mono taxes
+      reading, low contrast). Fixes: (1) north star reframed — the goal is **beautiful AND un-AI**;
+      escaping into cold/austere/ugly is its own failure; ornament/warmth/richness are allowed,
+      only the AI *reflexes* aren't. (2) Added the terminal/dev-brutalist centroid to the
+      moving-target watch (answer it with a beautiful idea, not austerity). (3) Craft/legibility
+      (kerning, contrast, spacing) now graded in the honest second look, even on expressive
+      surfaces. Edited SKILL.md, the-kit.md, authored-vs-ai.md. VERSION → 0.3.1.
+- [ ] NEXT: run the blind cold-judge on FUNCTIONAL genres (checkout, dashboard) with the evolved
+      skill — take the signal from n=1 to real, and test the genre calibration. Then, when it opens,
+      the native `claude plugin eval` for a repeatable suite.
 
 ## v0.2 — Execution layer ✅ (done)
 

@@ -46,7 +46,10 @@ reaching for any of them as a warning, not a solution.
 ## What to do instead — this is not a new forbidden list, it's a floor
 
 Do **not** respond by inventing an anti-Kit that becomes its own Kit (no-headline, no-color,
-all-brutalist). That is just the next fingerprint. Instead:
+all-brutalist, all-monospace). That is just the next fingerprint — and it is usually *ugly*, which
+fails the real bar. **The goal is a beautiful interface that doesn't look AI-made, not a bare one.**
+A page can have zero Kit atoms and be cold, cramped, and unlovable — that is a failure, not a pass.
+Ornament, warmth, richness, and polish are all allowed; only the AI *reflexes* are not. Instead:
 
 1. **Let the structural idea set the composition** (see [`authored-vs-ai.md`](authored-vs-ai.md)),
    so the page's *shape* isn't the hero-eyebrow-plate skeleton the Kit lives in. If the shape is
