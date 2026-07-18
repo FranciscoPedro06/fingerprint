@@ -21,10 +21,24 @@ reviewing them. Claude stays the executor; Fingerprint changes how it thinks.
 - [x] Rewrote `capabilities-and-limits.md` and `first-contact.md` for the build path.
 - [x] Reconciled `product/README.md`, `docs/product-architecture.md`, `docs/roadmap.md`,
       version → 0.2.0. Law of Judge Independence clarified as research-integrity, not a product ban.
-- [ ] NEXT: reconcile the softer references (`voice.md`, `reflection-flows.md`,
-      `observation-bridge.md`, `inputs.md`, `examples/session-transcripts.md`) to the build path.
-- [ ] NEXT: installable packaging (one-command install; verify plugin manifest schema).
-- [ ] NEXT: a runnable demo proving "create a front" feels different from a normal prompt.
+- [x] Reconciled the softer references (`voice.md`, `reflection-flows.md`, `inputs.md`,
+      `examples/session-transcripts.md`) to the build path.
+- [x] Installable packaging — plugin + marketplace, verified end to end (`claude plugin`).
+- [x] **v0.2.1 — the anti-centroid sharpening (Pedro's correction, 2026-07-17).** The v0.2
+      examples had escaped the SaaS centroid straight into the *editorial / premium-minimal*
+      centroid (cream + serif + sage) — itself the newest AI tell. Encoded the real discipline:
+      the AI look *moves*; **verifiable origin** for every visual decision (never "it's pretty");
+      a silent reference pass over *real* companies (not showcases); reflex-flag list (Inter/
+      Geist/Satoshi, editorial beige/green, giant hero, glassmorphism…) allowed only when
+      justified; and a mandatory skeptical self-critique ending in the **logo test** (iterate if
+      it still reads AI-generated). Rewrote `deviation.md`; sharpened `SKILL.md` (Law of
+      Grounding now covers generation; observe + second-look steps); de-contaminated the build
+      examples in `session-transcripts.md` and `first-contact.md`; added the "escaped into the
+      editorial centroid" anti-pattern.
+- [ ] NEXT: a runnable eval proving "create a front" feels different from a normal prompt, and
+      that it survives the logo test — `claude plugin eval` with a no-plugin baseline arm.
+- [ ] NEXT (deeper craft): per-genre centroid maps drawn from EXP-0001/EXP-0002 so the reference
+      pass has real recurrence data to lean on, not just genre intuition.
 
 Depends on: `observation-language/v1`, `interface.v1` profile, `methodology` laws.
 

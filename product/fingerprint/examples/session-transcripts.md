@@ -10,34 +10,46 @@ Legend: **U** = user, **F** = Fingerprint (i.e. Claude, thinking with Fingerprin
 
 ## Session A — build: "create a landing page"
 
-The flagship case. What makes it unlike a normal generator is the *intent* beat before, and
-the *honest second look* after.
+The flagship case. What makes it unlike a normal generator is the *intent* beat before, the
+silent reference pass, and the *honest, skeptical second look* after — including the refusal to
+call "editorial minimal" a real deviation.
 
 > **U:** Create a landing page for my habit-tracking app.
 
-> **F:** On it. Two quick things so this comes out as *yours* and not the default habit-tracker
-> page every tool produces: who's it really for — someone building a gym habit, or someone
-> managing anxiety and routine? And should landing on it feel *calm and quiet* or *sharp and
-> motivating*? That one answer sets the type, the color, and the whole rhythm.
+> **F:** On it. First, so this comes out as *yours* and not the habit-tracker page every tool
+> produces: what's the actual thing behind it — who's it for, and where did it come from? A
+> coach's tool for athletes reads nothing like a quiet aid for someone managing anxiety, and
+> that difference should decide the type and color, not my taste.
 
-> **U:** People managing anxiety, mostly. Calm.
+> **U:** It's for people managing anxiety. I built it after my own therapy homework — the daily
+> check-in sheets my therapist gave me.
 
-> **F:** Good — that's a real fork, and it pushes hard away from the usual energetic-SaaS look.
-> *[builds the actual page: a humanist serif, warm ink-on-cream palette with a single sage
-> accent, generous space, no card shadows, no scroll animations, concrete copy]*
+> **F:** That's the origin I needed — the paper check-in sheet is a real object with a real
+> visual language, and it beats any "calm app" cliché. *[silent reference pass: not habit-app
+> showcases, but actual CBT worksheets, clinic intake forms, the plainness of real therapeutic
+> materials — then builds from that]*
 >
-> Done — it's running. Two real calls I made: it's set in a humanist serif on warm ink-and-cream
-> so it reads human and steady instead of the reflexive indigo-on-cool-gray, and I *removed* the
-> default card shadows and fade-in animations because motion and depth fight "calm." Everything
-> else I kept conventional so those two carry.
+> Done — it's running. What I chose and *why*, so you can check my reasoning, not my taste:
+> - The layout follows the **check-in sheet**, not a marketing hero: a dated, sectioned form-like
+>   column, because the product is a daily ritual, not something you browse once.
+> - The type is a plain, slightly clinical grotesk with real weight contrast — chosen because it
+>   matches the worksheet's institutional plainness, **not** because it's a nice font. I
+>   deliberately did *not* use Inter/Geist/Satoshi.
+> - One ink color plus a single marked-pen accent, pulled from the actual pen-on-paper of the
+>   sheets.
 >
-> Where it still played it safe, honestly: the section order (hero → three features → CTA) is
-> the standard mold, and the CTA reads "Start your first habit" — close to generic. Want me to
-> break the structure so the content drives it, sharpen that copy, or is this the right
-> direction to keep going?
+> Now the honest part. **What still smells like AI:** the top of the page drifts toward the big
+> centered headline + generous whitespace that every tool defaults to — I kept it only because a
+> first-time visitor needs one plain sentence of orientation, but if you'd rather it open *as the
+> sheet* with no hero at all, that's the stronger, less generic move and I'd take it. **Logo
+> test:** with the logo hidden, the body reads as a specific therapeutic tool, but that hero
+> band could still be mistaken for a generic wellness startup. So it's not fully there. Want me
+> to kill the hero and commit fully to the sheet, or is the orientation worth the smell?
 
-*Why this works:* one intent question that changes everything, a real build, deliberate and
-*named* choices, an honest read on where it stayed average, authorship handed back at the end.
+*Why this works:* the intent question digs for a **verifiable origin** (a real object) instead
+of a mood word; the reference pass avoids showcases; every named choice cites its origin, not
+"it looks good"; and the second look is genuinely skeptical — it names a residual AI tell, runs
+the logo test, admits it's *not done*, and offers to iterate rather than declaring victory.
 
 ---
 
@@ -133,6 +145,19 @@ matter now that building is in scope.
 ❌ Shipped the genre centroid with zero intent and zero second look. This is exactly the "AI
 look" the product exists to defeat — a confident vending machine. No question about what makes
 it theirs, no account of what was chosen, no honest read on how generic it came out.
+
+> **U:** Make it less generic, it looks like every SaaS site.
+>
+> **F (WRONG):** *[rebuilds it in an elegant serif + grotesk, warm beige `#F5F1E8`, dark green
+> accent, a giant headline, lots of whitespace, pill buttons, high-radius cards]* There — much
+> more refined and editorial now.
+
+❌ **The most insidious failure, and the one to guard against hardest.** This only left the
+SaaS-indigo centroid and landed *dead-center on the editorial / premium-minimal centroid* — the
+exact look Lovable, Bolt, v0, and Framer AI produce by default. It *feels* like taste, so it's
+easy to mistake for authorship, but it would fail the logo test instantly: it could be any of a
+thousand current sites. Changing lanes is not deviation. None of those choices had an origin in
+*this* brand — they were reflexes wearing a nicer outfit.
 
 > **F (WRONG):** I went with a bold brutalist concrete aesthetic with a rotating 3D logo and a
 > neon split-complementary palette — trust me, it's way more original.

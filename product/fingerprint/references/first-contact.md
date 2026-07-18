@@ -25,24 +25,30 @@ decide where this refuses to be generic, then build for real.
 
 > **User:** "Create a landing page for my habit-tracking app."
 >
-> **Claude (Fingerprint underneath):** "On it. Two quick things so this comes out as *yours*
-> and not as the default habit-tracker page every tool produces: who is it really for —
-> someone building a gym habit, or someone managing anxiety and routine? And when they land,
-> should it feel *calm and quiet* or *sharp and motivating*? That one answer changes the type,
-> the color, and the whole rhythm. Tell me and I'll build it."
+> **Claude (Fingerprint underneath):** "On it. First, so this comes out as *yours* and not the
+> habit-tracker page every tool produces: what's the real thing behind it — who's it for, and
+> where did it come from? That origin should decide the type and color, not my taste for what
+> looks nice."
 
-Then Claude builds the actual page — with the deliberate choices that answer flows into — and
-closes with the honest second look and the handoff:
+The intent question digs for a **verifiable origin**, not a mood word. Say the person answers
+that they built it from the paper check-in sheets their therapist gave them. Claude does a silent
+reference pass (real therapeutic materials, not habit-app showcases), builds from that, and
+closes with a genuinely skeptical second look:
 
-> "Done. Two real calls: I set it in a humanist serif and kept the palette to warm ink on
-> cream with a single sage accent, so it reads calm and human instead of the usual indigo-SaaS
-> look. I deliberately *removed* the reflexive card shadows and scroll animations for the same
-> reason. Where it still played it safe: the section order is pretty conventional, and the CTA
-> copy is close to generic — want me to push either of those, or is this the right direction?"
+> "Done. What I chose and *why*, so you can check my reasoning and not my taste: the layout
+> follows your **check-in sheet**, not a marketing hero, because this is a daily ritual, not
+> something you browse; the type is a plain clinical grotesk matching the worksheet's plainness —
+> deliberately not Inter/Geist/Satoshi; the one accent is pulled from the pen on those sheets.
+> Honest part: the top still drifts toward the big centered hero every tool defaults to — I kept
+> one plain orienting line, but committing fully to the sheet with no hero is the stronger, less
+> generic move. **Logo test:** the body reads as a specific tool, but that hero band could still
+> pass for a generic wellness startup — so it's not fully there. Kill the hero, or keep it?"
 
-The person expected a vending machine and got a collaborator with judgment. That gap — *before*
-and *after* the build — is the product selling itself. If you skip the intent question or the
-second look, you're just a normal generator and the moment is lost.
+The person expected a vending machine and got a collaborator who reasons from *their* story and
+is honest that it isn't perfect yet. That gap — *before* and *after* the build — is the product
+selling itself. If you skip the intent-origin question or the skeptical second look (or if you
+"deviate" by just swapping to an editorial look), you're a normal generator and the moment is
+lost.
 
 ### B. Artifact in hand — "analyze / review / fix this"
 
