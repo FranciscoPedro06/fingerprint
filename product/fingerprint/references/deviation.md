@@ -10,6 +10,17 @@ centroid optimizes for. The goal is a visual language every one of whose decisio
 **verifiable origin** — so the result could not be swapped for hundreds of other current
 interfaces.
 
+**Start with the structural idea, not the skin.** The strongest evidence we have — 23 excellent
+real interfaces, observed dimension by dimension in
+[`authored-vs-ai.md`](authored-vs-ai.md) — is that identity is carried by a *structural stance
+toward convention* (refusal, transplant, inversion, extreme density, making the page *be* the one
+real thing), not by a style. MSCHF stays unmistakable with one font, two colors, and no images.
+"Dark and material" or "bold and retro" are skins; if you can only describe your design as a
+skin, you have repainted the centroid, not left it. Decide the structural idea first; the choices
+below fall out of it, and default *away* from the pool. That reference also holds the counted
+attribute contrast (Inter in only 2/23; gradients/glow/glass ≤1/23 each; chroma delegated to
+content, not chrome; sharp corners dominant) — read it as the target.
+
 ---
 
 ## The AI look is a moving target

@@ -1,7 +1,7 @@
 {
   "name": "fingerprint",
   "description": "A design-intelligence layer for Claude Code. When you create, analyze, refactor, or improve any interface, Fingerprint changes how Claude thinks: it understands intent first, builds with deliberate and legible choices instead of generic defaults, then takes an honest second look — so your frontends carry a fingerprint instead of the interchangeable 'AI look.'",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": {
     "name": "Pedro"
   },

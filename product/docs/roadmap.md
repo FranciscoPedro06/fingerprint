@@ -49,6 +49,17 @@ reviewing them. Claude stays the executor; Fingerprint changes how it thinks.
       the **individual brand** (and to flag input-starvation when there's no real material).
       Edited `deviation.md`, `SKILL.md`, added the barbershop self-critique anti-pattern to
       `session-transcripts.md`. VERSION/plugin.json → 0.2.2.
+- [x] **v0.2.3 — grounded the escape in evidence (research→product, 2026-07-17).** Two more
+      barbershop outputs (dark-luxury "Ofício", bold-retro "Régua") proved the skill was rotating
+      through *skins* on the *same skeleton* — the AI look is concrete visual repetition (a small
+      shared pool of fonts/colors/tics + one hero skeleton). Mined EXP-0001 (23 excellent real
+      interfaces) + EXP-0002 (the generated one) into `references/authored-vs-ai.md`: the counted
+      contrast (Inter in only 2/23; bespoke or plain-system type dominates; gradients/glow/glass
+      ≤1/23 each; pronounced shadows 0/23; sharp corners ≥8/23; chroma delegated to content, not
+      chrome) and the deepest finding — **signature is a structural idea (a stance toward
+      convention), not a skin.** MSCHF stays unmistakable with one font, two colors, no images.
+      Wired "structural idea before skin, then default away from the pool" into SKILL.md (loop
+      step 3) and deviation.md. VERSION/plugin.json → 0.2.3.
 - [ ] NEXT: a runnable eval proving "create a front" feels different from a normal prompt, and
       that it survives the *cross-genre* logo test — `claude plugin eval` with a no-plugin baseline arm.
 - [ ] NEXT (deeper craft): per-genre centroid maps drawn from EXP-0001/EXP-0002 so the reference

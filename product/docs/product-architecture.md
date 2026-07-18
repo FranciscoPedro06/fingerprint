@@ -85,6 +85,7 @@ product/fingerprint/
   references/
     first-contact.md                # the first-run "why this is different" moment, on build and review
     inputs.md                       # receiving each input type (screenshot, URL, code, Figma, codebase) safely
+    authored-vs-ai.md               # EVIDENCE: 23 excellent real interfaces vs AI defaults; signature is structural, not a skin
     deviation.md                    # the build craft: making choices off the genre centroid
     voice.md                        # personality & the interrogative voice, with examples
     reflection-flows.md             # the conversation flows and how sessions move

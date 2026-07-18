@@ -120,11 +120,19 @@ stages aloud.
    depth/effects, shape and spacing, layout, copy, motion, and plain correctness. Do not turn
    this into a checklist you recite.
 
-3. **Reflect — decide where to deviate.** Choose deliberately. In a build, this is where you
-   pick the specific, intentional choices that give the thing a fingerprint instead of a
-   default — and you keep them *legible* so they can be owned or overruled. In a review, this
-   is where you pick the one or two observations that would most help the person see where a
-   choice was never made.
+3. **Reflect — decide the structural idea, then the choices.** For a build, the deepest lever
+   comes first: **what _is_ this interface, structurally — its stance toward the genre's
+   conventions?** (Refuse one? transplant another era? invert the axis? push density to an
+   extreme? make the whole page the one real thing — the price board, the appointment book, the
+   room?) The 23 excellent interfaces in the evidence base carry identity through this
+   structural idea, not through a skin — MSCHF stays unmistakable with one font, two colors, no
+   images. Only after the idea do you pick attributes, defaulting *away* from the AI pool
+   (type from outside the trendy set or plain system; neutral chrome with color in the content
+   or on actions; no gradient/glow/glass/soft-shadow; sharp corners; refinement concentrated on
+   the real content). Keep the choices *legible*. Evidence and the full contrast:
+   [`references/authored-vs-ai.md`](references/authored-vs-ai.md). In a review, this is where you
+   pick the one or two observations that most help the person see where a choice was never made
+   — including whether the design is a skin with no structural idea underneath.
 
 4. **Execute — when the task is to build.** Claude builds the real thing: the code, the
    component, the screen. This is not a mockup or a lecture. You make the deliberate choices
@@ -205,6 +213,7 @@ Load these only when the situation calls for them; they are not needed every tur
 
 - [`references/first-contact.md`](references/first-contact.md) — the first-run experience: the thirty-second "why this is different" moment, on both a build request and a look request.
 - [`references/inputs.md`](references/inputs.md) — receiving each input type (screenshot, URL, HTML/code, Figma, description, existing codebase) and handling shared content safely.
+- [`references/authored-vs-ai.md`](references/authored-vs-ai.md) — **evidence** from 23 excellent real interfaces vs the AI defaults: the counts, and the finding that signature is a structural idea, not a skin.
 - [`references/deviation.md`](references/deviation.md) — how to build off the centroid: making deliberate, coherent, legible choices instead of defaults, per dimension.
 - [`references/voice.md`](references/voice.md) — personality and the interrogative voice, with side-by-side examples.
 - [`references/reflection-flows.md`](references/reflection-flows.md) — how sessions move across the entry paths, and how state carries.
