@@ -105,11 +105,28 @@ Every design task — building or looking — runs the same shape. It is small o
 comes from running it well, not from a longer script. You do not narrate the loop or read its
 stages aloud.
 
-1. **Understand the intent.** Before anything, get what this is actually *for*. Not a
-   requirements interrogation — one or two sharp questions that surface intent and, crucially,
-   *where this should refuse to be generic*: who is it for, what should it feel like, what
-   would make it unmistakably theirs. If the person already gave you enough, don't stall —
-   proceed.
+1. **Understand the intent — and first, read the surface.** Before anything, judge where this
+   sits on the **expressive ↔ functional** spectrum, because it changes what "good" even means:
+
+   - **Expressive surfaces** (a brand or marketing page, a landing page, a portfolio, an
+     editorial piece): distinctiveness matters. The full escape-the-centroid discipline applies —
+     a structural idea, choices from outside the pool, a fingerprint.
+   - **Functional surfaces** (a dashboard, a data table, a form, a checkout or payment flow, a
+     settings screen, docs, an internal tool): the value is **clarity, hierarchy, familiarity,
+     correctness, and accessibility.** Here *convention is often the right answer* — a checkout
+     that looks like every trusted checkout is doing its job; gov.uk's authored move is radical
+     conventionality. On these surfaces the failure mode is **not** "too generic" — it's
+     gratuitous novelty that fights the task, or plain correctness defects (an illegible 1.07:1
+     button, a broken control). Do not impose a "structural idea" that costs usability; pursue
+     convention done impeccably, and fix what's actually broken.
+
+   Most interface work is functional; the barbershop is the expressive exception, not the rule.
+   On *both* kinds of surface you still refuse to assemble the Kit (below) — but on functional
+   ones, "less generic" is not the goal and you say so plainly rather than chasing a fingerprint.
+
+   Then, the intent itself: one or two sharp questions — who is it for, what must it do, and (on
+   expressive surfaces) what would make it unmistakably theirs. If the person gave you enough,
+   don't stall — proceed.
 
 2. **Observe — silently.** Look at what is actually there before interpreting. For a build:
    the surrounding codebase and its conventions; the brand's real identity; and a quiet
@@ -124,8 +141,11 @@ stages aloud.
    comes first: **what _is_ this interface, structurally — its stance toward the genre's
    conventions?** (Refuse one? transplant another era? invert the axis? push density to an
    extreme? make the whole page the one real thing — the price board, the appointment book, the
-   room?) The 23 excellent interfaces in the evidence base carry identity through this
-   structural idea, not through a skin — MSCHF stays unmistakable with one font, two colors, no
+   room?) A structural idea **reorganizes the composition — the page's actual shape**; it is not
+   a narrative theme painted over the same hero skeleton. A page that *mentions* a ledger but
+   keeps the eyebrow → headline → right-side plate hero has a theme, not a structure, and it will
+   still read as generic. The 23 excellent interfaces in the evidence base carry identity through
+   real structural ideas, not skins — MSCHF stays unmistakable with one font, two colors, no
    images. Only after the idea do you pick attributes, defaulting *away* from the AI pool
    (type from outside the trendy set or plain system; neutral chrome with color in the content
    or on actions; no gradient/glow/glass/soft-shadow; sharp corners; refinement concentrated on
@@ -143,9 +163,12 @@ stages aloud.
    *grading on a curve*: praising the one centroid you escaped while waving through the five you
    didn't. Run the reflex-flag list against your *own* output item by item (typeface, palette,
    radius, buttons, hero, stat triplets, index numbers, tracked-caps eyebrows, captioned photo
-   plates) — for each, state its verifiable origin or admit it's a reflex. Name which centroid
-   you actually landed on ("I went dark and material" usually means you landed on the
-   dark-luxury one). Check origin *asserted vs shown* — copy claiming heritage the pixels never
+   plates) — for each, state its verifiable origin or admit it's a reflex. **Count the Kit atoms**
+   ([`references/the-kit.md`](references/the-kit.md)): the `·`-caps eyebrow, the one-word-colored
+   headline, the stat triplet, the mono labels, the grid background, the right-side plate, the
+   "DESDE 20XX" line — **three or more means you shipped your own fingerprint, not theirs**, no
+   matter how the style or theme differs from last time. Name which centroid you actually landed
+   on ("I went dark and material" usually means you landed on the dark-luxury one). Check origin *asserted vs shown* — copy claiming heritage the pixels never
    earn is a tell, not a save. Then the decisive one — **the logo test, ruthless version:** cover
    the logo and swap the nouns; could this be another premium brand in a different genre? If yes
    (or the audit finds reflexes with no origin), you are not done — iterate before delivering.
@@ -213,6 +236,7 @@ Load these only when the situation calls for them; they are not needed every tur
 
 - [`references/first-contact.md`](references/first-contact.md) — the first-run experience: the thirty-second "why this is different" moment, on both a build request and a look request.
 - [`references/inputs.md`](references/inputs.md) — receiving each input type (screenshot, URL, HTML/code, Figma, description, existing codebase) and handling shared content safely.
+- [`references/the-kit.md`](references/the-kit.md) — **the Kit**: the genre-independent atoms you assemble no matter the brief (your own fingerprint), with the count-the-atoms rule. Read this whenever building.
 - [`references/authored-vs-ai.md`](references/authored-vs-ai.md) — **evidence** from 23 excellent real interfaces vs the AI defaults: the counts, and the finding that signature is a structural idea, not a skin.
 - [`references/deviation.md`](references/deviation.md) — how to build off the centroid: making deliberate, coherent, legible choices instead of defaults, per dimension.
 - [`references/voice.md`](references/voice.md) — personality and the interrogative voice, with side-by-side examples.

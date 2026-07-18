@@ -5,7 +5,32 @@ stable state. Each milestone names the research version it depends on.
 
 ---
 
-## v0.2 — Execution layer ✅ (current)
+## v0.3 — The Kit + genre calibration ✅ (current)
+
+Two more outputs (a ledger barbershop "Corvo", a precision dental clinic "Meridiano") exposed the
+two remaining holes, and Pedro authorized fixing them (the "A/B/C" + "make the skill perfect"
+mandate, 2026-07-17):
+
+- [x] **The Kit** (`references/the-kit.md`): named the **genre-independent** atoms the model
+      re-assembles on *every* brief — its own fingerprint. Evidenced across four outputs (Ofício,
+      Régua, Corvo, Meridiano): the `·`-caps eyebrow, the one-word-colored headline ending in a
+      period, the stat triplet, mono labels, cream/charcoal-with-grid background, the right-side
+      hero plate, "DESDE 20XX", two-button hero — plus verbatim self-citation ("LUZ DE TUNGSTÉNIO"
+      in two outputs). Rule: **3+ Kit atoms = you shipped your own fingerprint, not theirs**,
+      regardless of restyle. This is the concrete attack on "mais do mesmo."
+- [x] **Genre calibration** (SKILL.md loop step 1): read the **expressive ↔ functional** spectrum
+      first. Expressive → full escape-the-centroid. Functional (dashboard, form, checkout, docs) →
+      clarity, hierarchy, convention-done-impeccably, correctness; distinctiveness is *not* the
+      goal and a forced "structural idea" is the failure (gov.uk = radical conventionality). The
+      Kit is refused on both. (Answers the C-boundary: serve both, adapt — don't refuse functional.)
+- [x] **Theme ≠ structure** (SKILL.md loop step 3): a structural idea reorganizes the
+      *composition*, not the copy; a page that *mentions* a ledger but keeps the hero skeleton has
+      a theme, not a structure (the Corvo lesson).
+- [x] Stress-test (the "A") folded into the Kit evidence + the genre table; VERSION → 0.3.0.
+- [ ] NEXT: the independent judge remains the real ceiling — an eval / cold second-pass reviewer,
+      because the maker grades on a curve (the Kit's own honest-limit note).
+
+## v0.2 — Execution layer ✅ (done)
 
 The pivot (2026-07-17): Fingerprint stops being a reflection-only mirror and becomes the layer
 that guides Claude *through* building, refactoring, and improving interfaces — not only
