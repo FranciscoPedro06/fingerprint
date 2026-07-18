@@ -35,8 +35,22 @@ reviewing them. Claude stays the executor; Fingerprint changes how it thinks.
       Grounding now covers generation; observe + second-look steps); de-contaminated the build
       examples in `session-transcripts.md` and `first-contact.md`; added the "escaped into the
       editorial centroid" anti-pattern.
+- [x] **v0.2.2 — the self-critique ruthlessness fix (live dogfood, 2026-07-17).** Pedro ran
+      "crie um frontend para uma barbearia" on v0.2.1. It reasoned well (asked intent, cited real
+      barbershops, tabled its choices) but the **honest second look graded on a curve**: it went
+      charcoal + brass + serif and believed that *left* the centroid, used the weak logo test
+      ("would it pass as a barbershop?" → yes) and shipped — while two humans read the output as
+      "muita cara de IA" instantly. Fixes: named the **dark-luxury / material centroid** as a
+      third live AI look (so going dark/material is not mistaken for an escape); made the **logo
+      test the cross-genre swap** (whiskey/tailor/steakhouse), retiring the within-genre false
+      pass; turned the second look into an **audit** (run the full reflex-flag list against your
+      own output, no spot-checking) that names the centroid it landed on, catches **origin
+      asserted-vs-shown**, and forbids grading on a curve; required the reference pass to reach
+      the **individual brand** (and to flag input-starvation when there's no real material).
+      Edited `deviation.md`, `SKILL.md`, added the barbershop self-critique anti-pattern to
+      `session-transcripts.md`. VERSION/plugin.json → 0.2.2.
 - [ ] NEXT: a runnable eval proving "create a front" feels different from a normal prompt, and
-      that it survives the logo test — `claude plugin eval` with a no-plugin baseline arm.
+      that it survives the *cross-genre* logo test — `claude plugin eval` with a no-plugin baseline arm.
 - [ ] NEXT (deeper craft): per-genre centroid maps drawn from EXP-0001/EXP-0002 so the reference
       pass has real recurrence data to lean on, not just genre intuition.
 

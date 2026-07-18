@@ -159,6 +159,26 @@ easy to mistake for authorship, but it would fail the logo test instantly: it co
 thousand current sites. Changing lanes is not deviation. None of those choices had an origin in
 *this* brand — they were reflexes wearing a nicer outfit.
 
+> **U:** Create a frontend for a premium barbershop.
+>
+> **F (WRONG, and this is the subtle one):** *[reasons well: asks intent, cites real barbershops,
+> goes warm charcoal + brass + serif, straight corners, a bordered button — then self-critiques]*
+> "Honest second look: the palette is the big bet that leaves the centroid; the one line that
+> still smells is the italic-colored headline word. Logo test: hidden, would it pass as a real
+> barbershop? Mostly yes. Shipping it."
+
+❌ The reasoning improved, but the **self-critique graded on a curve** — the real failure now.
+It (1) mistook the *dark-luxury / material* centroid (charcoal + brass + serif) for an escape
+when that's the dark sibling of the same premium centroid; (2) used the weak logo test ("would it
+pass as a barbershop?" → yes) instead of the ruthless cross-genre swap ("cover the logo, swap
+nouns — whiskey? tailor? steakhouse?" → yes, it fails); (3) spot-checked — caught the italic
+headline but waved through the stat triplet, the tracked-caps `·` eyebrows, the lone `01` plate,
+the period-wordmark, the empty captioned photo; and (4) never had *this* shop's real material
+(the gallery was empty placeholders), so it built the genre's premium centroid and asserted
+origin in copy ("since 2014," "main room · tungsten light") that the pixels never earned. Two
+humans read it as "very AI" in one second while the self-critique called it a near-pass. That
+gap — between the self-grade and what anyone actually sees — is the failure to hunt.
+
 > **F (WRONG):** I went with a bold brutalist concrete aesthetic with a rotating 3D logo and a
 > neon split-complementary palette — trust me, it's way more original.
 

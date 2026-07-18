@@ -19,21 +19,35 @@ convention centroid — is correct but incomplete on its own. The critical addit
 centroid moves.** As generators converge on a new aesthetic, that aesthetic *becomes* the new
 tell. Escaping one centroid into another fashionable one is lateral movement, not authorship.
 
-There is not one AI look. There are at least two live ones right now, and a third forming:
+There is not one AI look. There are at least three live ones right now:
 
 - **The SaaS-indigo centroid** (the older tell): Inter everywhere, a single saturated
   indigo/violet accent over cool grays, soft shadows on every card, a gradient hero button,
   backdrop-blur header, "Effortlessly powerful."
-- **The editorial / premium-minimal centroid** (the *newest and most seductive* tell — the one
-  that fools people who think they've escaped the AI look): Inter / Geist / Satoshi; an elegant
-  serif display paired with a grotesk body; a giant headline; warm editorial beige (around
-  `#F5F1E8`); dark green or "soft black"; heavy whitespace; pill buttons; an ultra-clean grid; a
-  minimal centered hero; high-radius cards. This is what Lovable, Bolt, v0, Framer AI, Relume,
-  and Webflow AI produce by default, and what fills current showcases.
+- **The editorial / premium-minimal centroid** (the *light* premium tell — the one that fools
+  people who think they've escaped the AI look): Inter / Geist / Satoshi; an elegant serif
+  display paired with a grotesk body; a giant headline; warm editorial beige (around `#F5F1E8`);
+  dark green or "soft black"; heavy whitespace; pill buttons; an ultra-clean grid; a minimal
+  centered hero; high-radius cards.
+- **The dark-luxury / material centroid** (the *dark* premium tell — the trap that springs on
+  any "premium," "craft," "lounge," "atelier," or "old-world" brief): warm charcoal / near-black;
+  brass, gold, oxblood, leather, tungsten; a serif display (often with one word set in italic
+  and in the accent color) plus condensed tracked-out caps; "apothecary / atelier" materiality;
+  a stat triplet with hairline dividers (`40' · 1:1 · 11`); lone editorial index numbers
+  (`01`) with no real system; a wordmark ending in a period; captioned photo plates that stand
+  in for real photography. This is what tools produce for a barbershop, a whiskey, a tailor, a
+  steakhouse, a specialty roaster — **the same page, logo swapped.**
 
-If your escape from indigo-SaaS is cream-and-serif, **you have not deviated — you have changed
-lanes inside the same highway.** "Tasteful" is a centroid too. Treat the editorial defaults with
-*more* suspicion than the SaaS ones, precisely because they feel like taste.
+All three are produced by Lovable, Bolt, v0, Framer AI, Relume, Webflow AI and fill current
+showcases. The two premium ones are the dangerous ones, because they *feel like taste*.
+
+**The specific trap to internalize:** escaping indigo-SaaS by going *cream-and-serif* is
+changing lanes. Escaping *that* by going *dark-charcoal-and-brass* is changing lanes again on
+the same highway. Going dark, going material, going "apothecary" is **not** deviation — the
+dark-luxury look is a centroid with a full tank of its own. If a "premium / craft" brief makes
+you reach for charcoal + brass + serif, that reach is the reflex, not the escape. Treat all
+three premium defaults with *more* suspicion than the obvious SaaS one, precisely because they
+feel earned.
 
 ## The one rule: verifiable origin
 
@@ -73,6 +87,16 @@ Run this quietly, before generating anything. Do not narrate it.
 7. Let that language decide the type, color, structure, and density — so each falls out of the
    brand and the genre, not out of habit.
 
+**The pass must reach the _individual brand_, not stop at the genre.** Researching "what do
+premium barbershops look like" and extracting the common denominator delivers you *to* the
+premium-barbershop centroid — the exact failure. The references are a map of the conventions to
+know; the deviation has to come from *this* place — its actual room, its actual barbers, its
+neighborhood, its founder's reason. If you have none of that — the brief was just "premium /
+lounge," the gallery is empty placeholders — you have no fuel for real deviation, and no palette
+choice will fake it. In that case, say so and get the real material, rather than dressing the
+genre centroid in nicer clothes. An empty captioned photo plate ("main room · tungsten light")
+is the visible symptom of building premium-*anything* with no actual specifics of *this* one.
+
 ## Interrogate every choice, out loud in your head
 
 While generating, keep asking:
@@ -83,8 +107,12 @@ While generating, keep asking:
   editorial beige / dark green, are both "safe.")
 - *"Does this layout exist because it solves the problem — or because it's the hero every AI
   produces?"*
-- **The logo test:** *"If I hid the logo, could this be confused with hundreds of current
-  interfaces?"* If yes, keep refining.
+- **The logo test — use the ruthless version.** Not *"would this pass as a real interface in
+  its genre?"* (that gives a false pass — a premium barbershop page *does* look like a plausible
+  premium barbershop). The real test is the **cross-genre swap:** *"cover the logo, swap the
+  nouns — could this exact page be a whiskey brand, a tailor, a steakhouse, a specialty coffee
+  roaster?"* If yes, it belongs to the genre's premium centroid, not to this brand. Keep
+  refining.
 
 ## Reflex flags — suspect by default, allowed only with a verifiable reason
 
@@ -119,19 +147,34 @@ came from you, not from them.
 
 ## The mandatory self-critique before delivery
 
-This is the Honest Second Look, sharpened. Before you hand anything over, answer — plainly, to
-the person:
+This is the Honest Second Look, sharpened. It is an **audit, not a vibe-check**, and its
+gravest failure mode is *grading on a curve* — congratulating yourself for the one centroid you
+escaped while waving through the five you didn't. Do not do the thing where you praise the
+palette as "a big bet that leaves the centroid" when the palette is itself a centroid. Before
+you hand anything over, answer — plainly, to the person:
 
-- **Which decisions still look like contemporary AI design?** Name them.
-- **Which references influenced my choices?** Name them, and confirm they were real-world, not
-  showcase.
-- **Which conventions did I keep** (and why were they worth keeping)?
-- **Which conventions did I break** (and why did the break work for this brand)?
-- **The logo test:** if I saw this interface with no logo, would I believe it belongs to a real
-  company — or would I guess it was AI-generated?
+- **Run the full reflex-flag list against your _own_ output, item by item.** Not a spot-check.
+  Go down the list — typeface, palette, radius, buttons, hero, stat triplets, index numbers,
+  tracked-caps eyebrows, captioned photo plates, gradients/glow — and for each one you used,
+  state its verifiable origin *or* admit it's a reflex you didn't catch. Catching one tell
+  (the italic headline) and stopping is the failure; the stat row and the `01` plate are tells
+  too.
+- **Which centroid did I actually land on?** Name it honestly. "I went dark and material"
+  usually means you landed on the dark-luxury centroid, not that you left it.
+- **Origin: asserted vs shown.** Does the copy *claim* heritage the pixels never earn — "since
+  2014," a captioned "main room" over an empty plate, "hand-forged"? Words buying authorship
+  the design didn't build is a tell, not a save.
+- **Which references influenced me** — and did they reach the *individual brand*, or stop at the
+  genre's premium references (which just deliver the genre's premium centroid)?
+- **The logo test, ruthless version:** cover the logo, swap the nouns — could this be another
+  premium brand in a different genre? If yes, you're on the centroid.
 
-If that last answer still tends toward "AI-generated," **you are not done. Iterate before
-delivering.** Shipping the centroid and calling it authored is the one unforgivable failure.
+If the cross-genre swap still works, or the flag-list audit turns up reflexes with no origin,
+**you are not done. Iterate before delivering.** And if you lack the real material to deviate —
+no photos, no room, no founder story, only "premium/lounge" — say so honestly: without this
+brand's specifics there is nothing to deviate *toward*, and the result will drift to the genre
+centroid no matter how nicely executed. Shipping the centroid and calling it authored is the one
+unforgivable failure; congratulating yourself for it is worse.
 
 ## Legibility: the handoff that keeps it theirs
 
