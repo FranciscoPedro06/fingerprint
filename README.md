@@ -70,8 +70,18 @@ downstream consumer** of the detector: its standing weakness is that it has no i
 detector, so it grades its own output on a curve — exactly the gap the program above exists to
 close. **No new capability ships until a validated discriminator can stand behind it.**
 Maintenance of its internal discipline continues (v0.4.0 made its checkable gates explicit and
-halved its prose), but that is housekeeping, not progress against the real gap. It remains
-installable; see [`product/README.md`](product/README.md).
+halved its prose), but that is housekeeping, not progress against the real gap.
+
+It remains installable. In Claude Code:
+
+```
+/plugin marketplace add FranciscoPedro06/fingerprint
+/plugin install fingerprint@fingerprint
+```
+
+Then open any project and start working on an interface — Claude loads Fingerprint on its own
+when the task calls for it. For the other two install paths (personal skill, local
+development) and what the Skill actually does, see [`product/README.md`](product/README.md).
 
 ## Status
 

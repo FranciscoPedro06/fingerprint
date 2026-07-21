@@ -29,6 +29,58 @@ own taste, never decides for the person, and always hands authorship back. Its j
 the "AI look" (the absence of deviation) in both directions: making real choices when building,
 and making automatic choices visible when reviewing.
 
+## Install
+
+Pick one. All three give Claude the Fingerprint layer; they differ only in how it's delivered.
+
+### 1. As a plugin (recommended — one command, versioned updates)
+
+In Claude Code:
+
+```
+/plugin marketplace add FranciscoPedro06/fingerprint
+/plugin install fingerprint@fingerprint
+```
+
+That's it. Open any project and start working on an interface — Claude loads Fingerprint on
+its own when the task calls for it.
+
+### 2. As a personal skill (simplest — works in every project)
+
+Copy the skill into your personal skills directory:
+
+```bash
+git clone https://github.com/FranciscoPedro06/fingerprint
+cp -r fingerprint/product/fingerprint ~/.claude/skills/fingerprint
+```
+
+Now `/fingerprint` is available everywhere, and Claude auto-invokes it on design tasks.
+
+### 3. For local development / trying it out
+
+```bash
+git clone https://github.com/FranciscoPedro06/fingerprint
+claude --plugin-dir ./fingerprint/product/fingerprint
+```
+
+Loads Fingerprint for that session only — good for hacking on it.
+
+## How it works
+
+You never talk to two systems. There is only Claude. Underneath, when the task is about a
+screen, Claude runs one small loop:
+
+```
+intent  →  observe (silent)  →  reflect / decide where to deviate  →
+execute (build the real thing)  →  honest second look  →  hand authorship back
+```
+
+It makes choices *legible* — it names what it chose and what it passed on — so the work stays
+yours to keep or overrule. Start with [`fingerprint/SKILL.md`](fingerprint/SKILL.md) (what
+Claude becomes) and
+[`fingerprint/references/deviation.md`](fingerprint/references/deviation.md) (the craft of
+building off the centroid).
+
 ## Structure
 
 | Path | Responsibility |
