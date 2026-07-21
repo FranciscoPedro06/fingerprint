@@ -80,8 +80,10 @@ It remains installable. In Claude Code:
 ```
 
 Then open any project and start working on an interface — Claude loads Fingerprint on its own
-when the task calls for it. For the other two install paths (personal skill, local
-development) and what the Skill actually does, see [`product/README.md`](product/README.md).
+when the task calls for it. To pull a later version, `/plugin marketplace update fingerprint`
+then `/plugin update fingerprint@fingerprint`. For the other two install paths (personal skill,
+local development), how to update each, and what the Skill actually does, see
+[`product/README.md`](product/README.md).
 
 ## Status
 

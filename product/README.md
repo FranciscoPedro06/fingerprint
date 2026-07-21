@@ -65,6 +65,41 @@ claude --plugin-dir ./fingerprint/product/fingerprint
 
 Loads Fingerprint for that session only — good for hacking on it.
 
+## Update
+
+New versions don't arrive on their own — an installed copy stays put until you pull the
+update. Each method updates the way it was installed.
+
+### If you installed it as a plugin (method 1)
+
+In Claude Code:
+
+```
+/plugin marketplace update fingerprint
+/plugin update fingerprint@fingerprint
+```
+
+The first refreshes the marketplace metadata (fetches the new `plugin.json`); the second
+applies the new version. Open a new terminal afterwards so Claude loads it. Check the version
+with `/plugin` — the entry shows the installed number, which should match
+[`fingerprint/VERSION`](fingerprint/VERSION).
+
+### If you installed it as a personal skill (method 2)
+
+Re-pull and re-copy over the old skill:
+
+```bash
+cd fingerprint && git pull
+cp -r product/fingerprint/. ~/.claude/skills/fingerprint/
+```
+
+The trailing `/.` copies the *contents* so removed files (old references) don't linger. On a
+clean sync, delete the target first: `rm -rf ~/.claude/skills/fingerprint`.
+
+### If you loaded it with `--plugin-dir` (method 3)
+
+Nothing to update — it reads the working tree live. Just `git pull` and restart the session.
+
 ## How it works
 
 You never talk to two systems. There is only Claude. Underneath, when the task is about a
