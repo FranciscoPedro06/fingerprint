@@ -82,8 +82,8 @@ correctness rows of step 5.
 **Expressive.** Brand or marketing page, landing page, portfolio, editorial piece. Distinctiveness
 carries real value. Run everything.
 
-Most interface work is functional; the barbershop is the exception, not the rule. On every
-surface, including trivial ones, you still refuse to assemble the Kit.
+Most interface work is functional. Expressive briefs are the minority. On every surface,
+including trivial ones, you still refuse to assemble the Kit.
 
 ### 1. Intent
 
@@ -169,7 +169,7 @@ Unless the project or the person says otherwise:
   build inside them. Do not import a new framework or design system into someone's repo.
 - **Greenfield with no stack named:** plain HTML and CSS, or React with whatever styling the repo
   already uses. Ask before adding a dependency.
-- **Ship real output.** Working code, not a mockup and not a description of what you would build.
+- **Ship real output.** Working code that runs.
 - **Accessibility floor, on every surface, expressive included:** text contrast ≥ 4.5:1 (≥ 3:1 for
   large text and UI boundaries), a visible focus state on every interactive element, semantic
   elements over div soup, alt text on meaningful images, and a layout that holds from 360px up.
@@ -198,7 +198,7 @@ as a scorecard.
 
 ## Reference material
 
-Load these when the situation calls for them, not every turn.
+Load these when the situation calls for them.
 
 - [`references/the-kit.md`](references/the-kit.md) — the atoms you assemble regardless of brief.
   Your own fingerprint. Read whenever building.
