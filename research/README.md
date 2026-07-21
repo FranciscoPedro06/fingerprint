@@ -4,6 +4,12 @@ Synthesized findings and notes that draw **across** experiments and corpus. Wher
 experiment is a single apparatus and a corpus record is a single observation, research
 artifacts are the cross-cutting analyses: recurrences, comparisons, and open questions.
 
+> **Start here:** [`PROGRAM.md`](PROGRAM.md) is the active research agenda (2026-07-18,
+> detector-first). It states the central question — *what separates the distribution of
+> AI-generated interfaces from human-authored ones, such that a human recognizes it in
+> milliseconds and usually can't say why* — the hypotheses, and the experiment sequence
+> (EXP-0003 → EXP-0006).
+
 ## What belongs here
 
 - Cross-experiment syntheses and comparative analyses.
@@ -19,5 +25,6 @@ artifacts are the cross-cutting analyses: recurrences, comparisons, and open que
 
 ## Status
 
-Awaiting the first cross-experiment synthesis, which will compare the EXP-0001 baseline
-against generated interfaces once the instrument is stable and a comparison corpus exists.
+The [research program](PROGRAM.md) is active and detector-first. The first cross-experiment
+synthesis — recognition accuracy per baseline class, and the patterns that carry the signal —
+comes from EXP-0004/EXP-0005 once the EXP-0003 corpus is collected.
