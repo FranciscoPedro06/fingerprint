@@ -1,6 +1,10 @@
 # Fingerprint — Product Architecture
 
-**Status:** v0.2 (execution layer)
+**Status:** v0.3.1, **paused and repositioned** (2026-07-18). The project moved to a
+[detector-first program](../../research/PROGRAM.md); this generation layer is now a downstream
+consumer of a validated discriminator, not the center of the project, and is not being
+developed further until that discriminator exists. The document below describes the architecture
+as it stands at the pause.
 **Audience:** whoever builds and evolves the product. Not the end user.
 
 ---

@@ -33,15 +33,14 @@ filled with **the same paint every time.** That is the Kit.
 ## The rule
 
 **The Kit is your default signature. Assembling it is producing the AI look, regardless of style,
-theme, or genre.** Restyling the Kit (serif→condensed, gold→green, dark→cream) does not escape it;
-narrating a concept over it (Corvo's "ledger") does not escape it. Only *not assembling it* does.
+theme, or genre.** Restyling the Kit (serif to condensed, gold to green, dark to cream) does not
+escape it. Narrating a concept over it (Corvo's "ledger") does not escape it. Only *not assembling
+it* does.
 
-Before you ship, count the atoms. **If your output contains three or more Kit atoms, stop — you
-have built your own fingerprint, not the brand's.** Each atom you keep must survive the same test
-as any other decision: a *verifiable origin* in this brand, this genre, this content — not "it
-looks clean / technical / premium." The stat triplet, the `·`-caps eyebrow, the one-word-colored
-headline, the mono labels, the grid background, the right-side plate: these are reflexes. Treat
-reaching for any of them as a warning, not a solution.
+The countable gate lives in the `SKILL.md` audit: **two atoms or fewer.** This file is the atom
+list that gate counts against. Each atom you do keep must survive the same test as any other
+decision, a verifiable origin in this brand, this genre, this content, and never "it looks clean
+or technical or premium." Reaching for any of them is a warning, not a solution.
 
 ## What to do instead — this is not a new forbidden list, it's a floor
 

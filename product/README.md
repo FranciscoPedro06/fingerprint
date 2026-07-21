@@ -1,5 +1,15 @@
 # Product
 
+> **Status (2026-07-20): repositioned as a downstream layer; feature-frozen, under maintenance.**
+> The project moved to a [detector-first program](../research/PROGRAM.md): the core is now a
+> system that detects, explains, and reduces the AI visual signature, and this generation Skill
+> becomes a *consumer* of a validated discriminator rather than the center of the project. Its
+> standing weakness — no independent detector, so it grades its own output on a curve — is
+> exactly what the program exists to fix, and no amount of internal refinement closes it.
+> **No new capability ships until that discriminator exists.** v0.4.0 is internal-discipline
+> maintenance only: the checkable gates were promoted into the loop, effort is now calibrated to
+> the surface, and the prose was cut roughly in half. Everything below describes it as it stands.
+
 This pillar holds **Fingerprint the product** — the thing a person actually uses.
 
 Everything else in this repository is research infrastructure:
@@ -57,7 +67,9 @@ never as raw Atlas entries or experiment numbers.
 
 ## Status
 
-v0.2 — the execution layer. The Skill now guides Claude *through* building, refactoring, and
-improving interfaces (not only reviewing them), using the intent → observe → reflect → execute
-→ honest-second-look → hand-back loop. See [`docs/roadmap.md`](docs/roadmap.md) for what is
-built and what comes next.
+v0.4.0 — the calibrated layer. The Skill guides Claude *through* building, refactoring, and
+improving interfaces, not only reviewing them. The loop now opens with a surface gate (trivial /
+functional / expressive) so effort matches the task, and closes with a scored audit rather than a
+vibe-check: Kit-atom count, the cross-genre logo test, contrast, a named structural idea, a fork
+shown. It carries a delivery contract with a WCAG AA floor, and `evals/` holds the prompts and
+rubric it is checked against. See [`docs/roadmap.md`](docs/roadmap.md) for what comes next.

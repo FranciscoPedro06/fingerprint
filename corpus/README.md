@@ -4,6 +4,12 @@ Reviewed observation records, written in the [Observation Language](../observati
 The corpus is the project's data: the accumulated, inspectable observations from which
 Atlas entries are drawn.
 
+Under the [detector-first program](../research/PROGRAM.md) the corpus is **two-sided**: it holds
+both the AI-generated distribution and three classes of human-authored reference
+(typical-professional, curated-excellent, trend-following-human), all built from the same sealed
+briefs and captured through one identical pipeline. What separates these distributions is the
+program's central question, so both sides are first-class data.
+
 ## What belongs here
 
 - Records that conform to the Observation Language ([Specification §9](../observation-language/v1/SPECIFICATION.md))
@@ -28,4 +34,6 @@ Independence.
 
 The first corpus material is the EXP-0001 baseline (23 interface records) and the EXP-0002
 lab sample. These are being migrated to Observation Language v1 form before promotion into
-this directory; until then they remain under [`experiments/`](../experiments/).
+this directory; until then they remain under [`experiments/`](../experiments/). The two-sided
+generator corpus is built by [EXP-0003](../experiments/EXP-0003-generator-corpus/); its
+observer-facing samples stay provenance-blind and its provenance key stays sealed until scoring.

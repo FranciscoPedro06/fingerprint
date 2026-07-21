@@ -1,6 +1,17 @@
 # Local Claude Code settings and workspace
 .claude/
 
+# Sealed experimental provenance — never published.
+#
+# Any `_sealed/` directory holds the provenance key for a blind study: source
+# class, generator + version, brief mapping, generation logs. EXP-0004's result
+# is worthless if the judge (or the public) can read it before answers are
+# locked — see experiments/EXP-0004-recognition-study/protocol.md.
+#
+# Unsealed only at scoring, by whoever computes results, never by an observer.
+# Keep local, back up outside the repo.
+_sealed/
+
 # OS / editor cruft
 .DS_Store
 Thumbs.db

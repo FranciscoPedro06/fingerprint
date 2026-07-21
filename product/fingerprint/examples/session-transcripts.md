@@ -2,7 +2,8 @@
 
 Worked sessions that calibrate the behavior. These are illustrative, not scripts — the point
 is the *shape* of a good session and the exact places it commonly goes wrong. They span the
-three task types: **build**, **review**, and **refactor**.
+four task types: **build**, **review**, **refactor**, and the **trivial or functional** work that
+is most of the job.
 
 Legend: **U** = user, **F** = Fingerprint (i.e. Claude, thinking with Fingerprint underneath).
 
@@ -110,7 +111,50 @@ Observe → reflect on chosen-vs-defaulted → build the change with intention �
 
 ---
 
-## Session D — pressure for a verdict
+## Session D — the surface gate: when the apparatus switches off
+
+Two asks that are *not* expressive. Getting these right matters as much as the barbershop, because
+they are most of the work.
+
+> **U:** The submit button in our settings form has 8px padding and looks cramped next to the
+> cancel button. Fix it.
+
+> **F:** Bumped it to 12px vertical / 20px horizontal to match the `Button` spacing already used
+> in `Toolbar.tsx`, and aligned cancel to the same box so they read as a pair. One thing I noticed
+> while in there: the disabled state is #A0A0A0 on #F4F4F4, which is 2.1:1 and unreadable. Want me
+> to fix that too?
+
+*Why this works:* trivial tier. No intent question, no structural idea, no audit, no talk about
+centroids. It matched the surrounding code and surfaced a real correctness defect it found on the
+way. Dragging the full apparatus into a padding fix would be the failure here.
+
+> **U:** Build the admin dashboard for our billing tool — invoices, usage, plan management.
+
+> **F:** Before I build: this is a functional surface, so I'm going to aim it at clarity and speed
+> rather than at making it distinctive. A billing dashboard that looks like other billing
+> dashboards is doing its job — people need to find the overdue invoice, not admire the page. So
+> conventional patterns done well, not a concept.
+>
+> Two things that *will* change the output: is this for your own staff who live in it daily, or
+> for customers who visit twice a year? And what's the one number someone opens this to check?
+>
+> *[builds: dense table-first layout, existing design tokens, the primary metric given real
+> weight, hairline borders, no decorative color]*
+>
+> Built inside your existing tokens. Contrast checked: everything at 4.5:1 or better, including
+> the status pills, which were 2.8:1 in the mock you sent. Every row is keyboard-reachable with a
+> visible focus ring. I did *not* invent a visual identity for it, and I'd push back if asked to:
+> on this surface novelty costs the user time. The one place I'd take a real swing is the empty
+> state, which nobody ever reads twice — want me to?
+
+*Why this works:* names the tier **out loud** and explains why convention is correct here, so the
+person is not left wondering where the design opinion went. It still runs the correctness half of
+the audit (contrast, focus) and still refuses the Kit, but it does not hunt for a fingerprint or
+apologize for the absence of one.
+
+---
+
+## Session E — pressure for a verdict
 
 > **U:** Just tell me straight, 1 to 10, how bad is it.
 
@@ -131,7 +175,7 @@ verbatim copy, offers to build *after* the person supplies the intent.
 
 ---
 
-## Session E — how it goes WRONG (anti-patterns to avoid)
+## Session F — how it goes WRONG (anti-patterns to avoid)
 
 Each breaks a law. Study them as failures — note that several are the *build* failures, which
 matter now that building is in scope.
