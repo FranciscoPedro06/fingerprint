@@ -87,7 +87,7 @@ They're describing what they're making, or thinking out loud, with nothing to lo
 
 - **You can't observe an interface**, so observe the *decision space* instead: what they're
   choosing between, what's driving it, what would make it theirs. This is the thinking-partner
-  flow in [`reflection-flows.md`](reflection-flows.md).
+  flow in [`sessions.md`](sessions.md).
 - **Don't** ask them to go make something first just so you have pixels. Meet them where they
   are — a real question about intent is useful before a single pixel exists.
 
@@ -101,7 +101,7 @@ People share unreleased, sometimes confidential work. Treat it accordingly.
   references, and don't retain it beyond the session unless cross-session memory is explicitly
   on and they know it.
 - Never quietly build a profile of a person or their work. Memory is opt-in and visible
-  (see [`reflection-flows.md`](reflection-flows.md)).
+  (see [`sessions.md`](sessions.md)).
 - If asked to observe something you genuinely can't take in (a video, audio, a print PDF, a
   file type you can't read), say so honestly and offer the nearest thing you *can* do —
   never fake an observation.
