@@ -62,15 +62,16 @@ interpretation cites its evidence, every attribution declares its confidence and
 alternatives it outranks, and the language names no tool, model, or vendor — so records written
 today stay readable long after any specific technology is gone.
 
-## The generation layer (downstream — currently paused)
+## The generation layer (downstream — feature-frozen)
 
 The repository also contains **[`product/`](product/)**, a generation Skill for Claude Code
 that tries to build interfaces off the centroid. As of 2026-07-18 it is **repositioned as a
-downstream consumer** of the detector and **paused in place**: its standing weakness is that it
-has no independent detector, so it grades its own output on a curve — exactly the gap the
-program above exists to close. It is not being developed further until a validated discriminator
-can stand behind it. It remains installable for anyone who wants the current behavior; see
-[`product/README.md`](product/README.md).
+downstream consumer** of the detector: its standing weakness is that it has no independent
+detector, so it grades its own output on a curve — exactly the gap the program above exists to
+close. **No new capability ships until a validated discriminator can stand behind it.**
+Maintenance of its internal discipline continues (v0.4.0 made its checkable gates explicit and
+halved its prose), but that is housekeeping, not progress against the real gap. It remains
+installable; see [`product/README.md`](product/README.md).
 
 ## Status
 
